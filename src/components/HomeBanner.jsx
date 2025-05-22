@@ -1,19 +1,39 @@
 
 import React from 'react';
+import { Button } from "@/components/ui/button.tsx";
 
 const HomeBanner = () => {
   return (
-    <div className="bg-gradient-to-r from-brand-orange-light via-orange-50 to-brand-orange-light dark:from-brand-orange-dark dark:via-orange-900 dark:to-brand-orange-dark py-20 px-4 text-center">
-      <div className="container mx-auto">
-        <h1 className="text-5xl md:text-6xl font-bold text-brand-orange-dark dark:text-brand-orange-light mb-4">
-          Welcome to Sunday Bite!
-        </h1>
-        <p className="text-xl md:text-2xl text-foreground mb-8">
-          Delicious food, unforgettable moments. Your favorite meals, just a click away.
-        </p>
-        <button className="bg-primary hover:bg-brand-orange-dark text-primary-foreground font-semibold py-3 px-8 rounded-lg shadow-md transition-transform transform hover:scale-105">
-          Order Now
-        </button>
+    <div className="relative bg-brand-orange-light dark:bg-brand-orange-dark py-16 px-4 overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-gradient-to-r from-orange-300 to-yellow-300 blur-md opacity-70"></div>
+        <div className="absolute bottom-10 left-10 w-40 h-40 rounded-full bg-gradient-to-r from-red-400 to-orange-300 blur-md opacity-60"></div>
+      </div>
+      
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
+        {/* Text Content */}
+        <div className="md:w-1/2 text-left mb-12 md:mb-0">
+          <div className="mb-6">
+            <h2 className="text-3xl font-serif text-brand-orange-dark dark:text-brand-orange-light mb-2">Der beste</h2>
+            <h1 className="text-6xl md:text-7xl font-bold font-serif text-red-500 mb-2">
+              <span className="inline-block transform -rotate-2">Burger</span>
+            </h1>
+            <h2 className="text-3xl font-serif text-brand-orange-dark dark:text-brand-orange-light">der Stadt</h2>
+          </div>
+          <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-foreground font-bold rounded-md px-8 py-3 transform transition-transform hover:scale-105">
+            JETZT BESTELLEN
+          </Button>
+        </div>
+        
+        {/* Image */}
+        <div className="md:w-1/2 flex justify-center">
+          <img 
+            src="/lovable-uploads/c5082531-55dc-4217-989c-3ebbfdeaf1ae.png" 
+            alt="Delicious burger with ingredients" 
+            className="w-full max-w-md object-contain z-10"
+          />
+        </div>
       </div>
     </div>
   );
