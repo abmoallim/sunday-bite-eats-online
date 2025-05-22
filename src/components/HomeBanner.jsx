@@ -4,23 +4,26 @@ import { Button } from "@/components/ui/button.tsx";
 
 const HomeBanner = () => {
   return (
-    <div className="relative bg-brand-orange-light dark:bg-brand-orange-dark py-16 px-4 overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute top-10 right-10 w-64 h-64 rounded-full bg-gradient-to-r from-orange-300 to-yellow-300 blur-md opacity-70"></div>
-        <div className="absolute bottom-10 left-10 w-40 h-40 rounded-full bg-gradient-to-r from-red-400 to-orange-300 blur-md opacity-60"></div>
-      </div>
-      
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
+    <div className="bg-gray-50 dark:bg-neutral-900 py-20 md:py-28 px-6">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Text Content */}
-        <div className="md:w-1/2 text-left mb-12 md:mb-0">
+        <div className="md:w-1/2 text-center md:text-left">
           <div className="mb-6">
-            <h1 className="text-6xl md:text-7xl font-bold font-serif text-red-500 mb-2">
-              <span className="inline-block transform -rotate-2">Sunday</span>
+            <h1 className="text-6xl md:text-7xl font-bold font-serif text-primary mb-2 inline-block transform -rotate-2">
+              Sunday
             </h1>
-            <h2 className="text-5xl font-serif text-brand-orange-dark dark:text-brand-orange-light">Bite</h2>
+            <h2 className="text-5xl md:text-6xl font-sans font-medium text-foreground/80 dark:text-foreground/70">
+              Bite
+            </h2>
           </div>
-          <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-foreground font-bold rounded-md px-8 py-3 transform transition-transform hover:scale-105">
+          <p className="text-lg text-muted-foreground max-w-md mx-auto md:mx-0 mb-8">
+            Discover a delightful fusion of traditional flavors and contemporary cuisine. Your new favorite meal awaits.
+          </p>
+          <Button 
+            variant="default" 
+            size="lg" 
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg px-10 py-3 text-lg transform transition-transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
             Order Today
           </Button>
         </div>
@@ -28,9 +31,9 @@ const HomeBanner = () => {
         {/* Image */}
         <div className="md:w-1/2 flex justify-center items-center">
           <img 
-            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1000&q=80" 
-            alt="Delicious burger" 
-            className="w-full max-w-lg h-80 md:h-96 object-cover z-10 rounded-lg shadow-xl"
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1000&q=80" 
+            alt="Artistically plated fine dining dish" 
+            className="w-full max-w-md md:max-w-lg h-auto object-cover rounded-xl shadow-2xl aspect-[4/3]"
           />
         </div>
       </div>
