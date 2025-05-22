@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Heart, ShoppingCartPlus } from 'lucide-react'; // Changed from ShoppingCart to ShoppingCartPlus for "Add to Cart"
+import { Heart, ShoppingCart } from 'lucide-react'; // Changed ShoppingCartPlus to ShoppingCart
 
 const MenuItemCard = ({ item }) => {
   // const { addToCart } = useCart(); // Assuming a CartContext
@@ -24,13 +24,13 @@ const MenuItemCard = ({ item }) => {
         <p className="text-muted-foreground text-sm mb-2 h-10 overflow-hidden">{item.description}</p>
         <p className="text-lg font-semibold text-primary mb-3">${item.price.toFixed(2)}</p>
         <div className="flex justify-between items-center">
-          <button 
+          <button
             onClick={handleAddToCart}
             className="bg-primary hover:bg-brand-orange-dark text-primary-foreground px-4 py-2 rounded-md text-sm font-medium flex items-center transition-colors"
           >
-            <ShoppingCartPlus size={18} className="mr-2"/> Add to Cart
+            <ShoppingCart size={18} className="mr-2"/> Add to Cart
           </button>
-          <button 
+          <button
             onClick={handleToggleFavorite}
             className="text-destructive hover:text-red-700 p-2 rounded-full transition-colors"
             // aria-pressed={isFavorite(item.id)}
