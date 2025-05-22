@@ -15,11 +15,10 @@ const HomeBanner = () => {
         {/* Text Content */}
         <div className="md:w-1/2 text-left mb-12 md:mb-0">
           <div className="mb-6">
-            <h2 className="text-3xl font-serif text-brand-orange-dark dark:text-brand-orange-light mb-2">Der beste</h2>
             <h1 className="text-6xl md:text-7xl font-bold font-serif text-red-500 mb-2">
-              <span className="inline-block transform -rotate-2">Burger</span>
+              <span className="inline-block transform -rotate-2">Sunday</span>
             </h1>
-            <h2 className="text-3xl font-serif text-brand-orange-dark dark:text-brand-orange-light">der Stadt</h2>
+            <h2 className="text-5xl font-serif text-brand-orange-dark dark:text-brand-orange-light">Bite</h2>
           </div>
           <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-foreground font-bold rounded-md px-8 py-3 transform transition-transform hover:scale-105">
             JETZT BESTELLEN
@@ -29,9 +28,9 @@ const HomeBanner = () => {
         {/* Image */}
         <div className="md:w-1/2 flex justify-center">
           <img 
-            src="/lovable-uploads/c5082531-55dc-4217-989c-3ebbfdeaf1ae.png" 
-            alt="Delicious burger with ingredients" 
-            className="w-full max-w-md object-contain z-10"
+            src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80" 
+            alt="Delicious burger" 
+            className="w-full max-w-md object-contain z-10 rounded-lg shadow-lg"
           />
         </div>
       </div>
