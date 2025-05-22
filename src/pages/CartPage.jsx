@@ -3,7 +3,7 @@ import React from 'react';
 import { useAuth } from '../contexts/AuthContext.jsx';
 import { Navigate } from 'react-router-dom';
 import { useToast } from "@/components/ui/use-toast"; // Ensure this path is correct
-import { Button } from '@/components/ui/button.jsx';
+import { Button } from '@/components/ui/button.tsx'; // Changed .jsx to .tsx
 
 const CartPage = () => {
   const { user } = useAuth();
