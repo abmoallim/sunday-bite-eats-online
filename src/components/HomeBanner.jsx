@@ -21,16 +21,16 @@ const HomeBanner = () => {
             <h2 className="text-5xl font-serif text-brand-orange-dark dark:text-brand-orange-light">Bite</h2>
           </div>
           <Button variant="default" size="lg" className="bg-yellow-500 hover:bg-yellow-600 text-foreground font-bold rounded-md px-8 py-3 transform transition-transform hover:scale-105">
-            JETZT BESTELLEN
+            Order Today
           </Button>
         </div>
         
         {/* Image */}
-        <div className="md:w-1/2 flex justify-center">
+        <div className="md:w-1/2 flex justify-center items-center">
           <img 
-            src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnVyZ2VyfGVufDB8fDB8fHww&w=1000&q=80" 
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1000&q=80" 
             alt="Delicious burger" 
-            className="w-full max-w-md object-contain z-10 rounded-lg shadow-lg"
+            className="w-full max-w-lg h-80 md:h-96 object-cover z-10 rounded-lg shadow-xl"
           />
         </div>
       </div>
